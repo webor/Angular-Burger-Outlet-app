@@ -1,0 +1,25 @@
+<li class="burger__list__item">
+    <div class="burger__list__item__product">
+        <img class='burger__list__item__image' src={{imageUrl}} />
+        <div class="burger__list__item__details">
+            <p class="details__row__info">
+                    <span class="details__category"
+                    [ngClass]="{
+                        'details__veg': isVeg,
+                        'details__nonVeg': !isVeg
+                    }"
+                ></span>
+                <span class="details__label">{{displayLabel}}</span>
+                <span class="details__price"> ₹ {{price}}</span>
+            </p>
+            <p class="details__row__bug">
+                    <span class="details__label">Cart </span>
+                    <span class="details__count">{{selfCount}} </span>
+            </p>
+        </div>
+      </div>
+      <div class="burger__list__item__button-container">
+            <button class="burger__list__item__add" (click)="onSelect(item)">{{metaData.labels.add}} </button>
+            <button class="burger__list__item__remove" (click)="onRemove(item)">Remove</button>
+      </div> 
+</li>

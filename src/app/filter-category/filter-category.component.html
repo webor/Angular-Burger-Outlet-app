@@ -1,0 +1,7 @@
+<h3 class="ratings__filter__title">Category</h3>
+<ul class="ratings__filter">
+    <li class="ratings__filter__item" *ngFor="let item of categoryFilter">
+            <mat-radio-button [value]="item.value" (click)="onClick({id:item.id, event:$event})">{{item.displayLabel}}
+            </mat-radio-button>
+    </li>
+</ul>

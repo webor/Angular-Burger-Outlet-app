@@ -1,0 +1,11 @@
+<div class="side-nav">
+    <div class="simplebar-content" style="padding-bottom: 20px;">
+        <ul class="side-nav__actions">
+          <li class="side-nav__actions__item">
+              <h2 class="side-nav__actions__title">Filter By</h2>
+              <app-filter-rating class="side-nav__actions__filter" [filterData]="filterData" (broadcastFilter)="setRatingFilter($event)"></app-filter-rating>
+            <app-filter-category class="side-nav__actions__filter" [filterData]="filterData" (broadcastFilter)="setCategoryFilter($event)"></app-filter-category>
+          </li>
+        </ul>
+      </div>
+</div>

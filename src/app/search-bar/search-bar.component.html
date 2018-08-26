@@ -1,0 +1,11 @@
+<div class="search-bar">
+    <input class="search-bar__input" type="text" 
+            #query
+            (keyup)="filterProducts(query.value)"  
+            placeholder="Search for your favorite Burgers" 
+            value="" 
+            id="searchBarLabel">
+    <div class="search-icon__container">
+      <span class="search-icon__item"></span>
+    </div>
+  </div>

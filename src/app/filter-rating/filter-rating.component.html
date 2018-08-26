@@ -1,0 +1,8 @@
+<h3 class="ratings__filter__title">Ratings</h3>
+<ul class="ratings__filter">
+    <li class="ratings__filter__item" *ngFor="let item of ratingsFilter">
+            <mat-checkbox [value]="item.value" (change)="onChange({id:item.id, event:$event})">{{item.displayLabel}}
+                <span *ngFor="let el of item.stars" class="ratings__filter__stars">★</span>
+            </mat-checkbox>
+    </li>
+</ul>

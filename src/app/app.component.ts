@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Burger } from './burger';
 
 @Component({
   selector: 'app-root',

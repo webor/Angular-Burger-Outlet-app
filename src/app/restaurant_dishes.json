@@ -1,0 +1,132 @@
+{
+    "status": "success",
+    "data": {
+        "menu": [
+            {
+                "id": "1",
+                "displayLabel": "Burger-1",
+                "imageUrl": "https://nv.ua/img/article/24657/64_main.jpeg",
+                "rating": 3,
+                "price": 250,
+                "category": "veg"
+            },
+            {
+                "id": "2",
+                "displayLabel": "Burger-2",
+                "imageUrl": "http://wallpapersdsc.net/wp-content/uploads/2016/09/Burger-Wallpapers-HD.jpg",
+                "rating": 1,
+                "price": 200,
+                "category": "veg"
+            },
+            {
+                "id": "3",
+                "displayLabel": "Burger-3",
+                "imageUrl": "http://www.voreini.gr/wp-content/uploads/hamberger.jpg",
+                "rating": 4,
+                "price": 350,
+                "category": "nonVeg"
+            },{
+                "id": "4",
+                "displayLabel": "Burger-4",
+                "imageUrl": "https://wallpaper.wiki/wp-content/uploads/2017/04/wallpaper.wiki-Free-Burger-Image-PIC-WPB0013280.jpg",
+                "rating": 5,
+                "price": 350,
+                "category": "nonVeg"
+            },
+            {
+                "id": "5",
+                "displayLabel": "Burger-5",
+                "imageUrl": "http://www.kadulanches.com.br/wp-content/uploads/2016/03/food62-burger-southwest-1024x768.jpg",
+                "rating": 4,
+                "price": 320,
+                "category": "nonVeg"
+            }
+        ]
+    },
+    "meta": {
+        "labels": {
+            "veg": "Veg",
+            "nonVeg": "Non Veg",
+            "add": "Add"
+        },
+        "filters": {
+            "id": "filters",
+            "displayLabel": " Filter By ",
+            "filterList": [
+                {
+                    "id": "ratings",
+                    "type": "radio",
+                    "order": 1,
+                    "displayLabel": "Ratings",
+                    "options": [
+                        {
+                            "id": "5",
+                            "order": 1,
+                            "value": 5,
+                            "displayLabel": "5 Star"
+                        }, 
+                        {
+                            "id": "4",
+                            "order": 2,
+                            "value": 4,
+                            "displayLabel": "4 Star"
+                        }, 
+                        {
+                            "id": "3",
+                            "order": 3,
+                            "value": 3,
+                            "displayLabel": "3 Star"
+                        }, 
+                        {
+                            "id": "2",
+                            "order": 4,
+                            "value": 2,
+                            "displayLabel": "2 Star"
+                        }, 
+                        {
+                            "id": "1",
+                            "order": 5,
+                            "value": 1,
+                            "displayLabel": "1 Star"
+                        }
+                    ]
+                  },
+                  {
+                    "id": "category",
+                    "type": "radio",
+                    "order": 2,
+                    "displayLabel": "Category",
+                    "options": [
+                        {
+                            "id": "veg",
+                            "order": 1,
+                            "displayLabel": "Veg"
+                        }, 
+                        {
+                            "id": "nonVeg",
+                            "order": 2,
+                            "displayLabel": "Non Veg"
+                        }
+                    ]
+                  }
+            ]
+        },
+        "sortBy": {
+            "id": "price",
+            "displayLabel": " Sort By ",
+            "sortList": [
+                {
+                    "id": "highToLow",
+                    "order": 1,
+                    "displayLabel": "High to Low"
+                }, 
+                {
+                    "id": "lowToHigh",
+                    "order": 2,
+                    "displayLabel": "Low to High"
+                }
+            ]
+        }
+    },
+    "selected": {}
+}

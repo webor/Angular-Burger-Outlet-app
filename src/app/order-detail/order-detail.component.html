@@ -1,0 +1,34 @@
+<div class="order-details__container">
+  <h1 class="order-details__info">Below is your cart summary </h1>
+  <table class="table">
+      <colgroup>
+        <col style="width: 800px">
+        <col style="width: 400px;">
+        <col style="width: 400px">
+      </colgroup>
+    <thead class="table__head">
+      <tr class="table__head__row">
+        <th class="table__column table__column--head">Order</th>
+        <th class="table__column table__column--head">Quantity</th>
+        <th class="table__column table__column--head">Amount</th>
+      </tr>
+    </thead>
+    <tbody class="table__body">
+      <tr class="table__body__row" *ngFor="let item of selectedProductList" >
+        <td class="table__body__data table__body__data--info"><img class="table__body__data--image" src={{item.imageUrl}}> <span class="table__body__data--label">{{item.displayLabel}}</span></td>
+        <td class="table__body__data table__body__data--count">{{item.count}}</td>
+        <td class="table__body__data table__body__data--amount">₹ {{item.total}}</td>
+      </tr>
+    </tbody>
+    <tfoot class="table__foot">
+        <tr class="table__foot__row">
+          <td class="table__column table__column--foot">Total</td>
+          <td class="table__column">{{totalCount}}</td>
+          <td class="table__column">₹ {{total}}</td>
+        </tr>
+      </tfoot>
+    </table>
+</div>
+<div class="button__container">
+    <button class="button__proceed" routerLinkActive="header__list__item--active" routerLink="/checkout" > Proceed to checkout </button>
+</div>

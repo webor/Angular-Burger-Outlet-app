@@ -1,0 +1,10 @@
+.burger__container{
+    box-sizing: border-box;
+    width: 80%;
+    display: inline-block;
+    float: right;
+}
+.burger__list{
+    display: block;
+    width: 100%;
+}

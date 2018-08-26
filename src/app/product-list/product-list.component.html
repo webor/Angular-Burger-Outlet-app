@@ -1,0 +1,21 @@
+<app-side-nav [metaData]="metaData" 
+    (broadcastCheckboxFilter)="registerFilter($event)" 
+    (broadcastRadioFilter)="registerFilter($event)"></app-side-nav>
+<div class="burger__container">
+        <app-search-bar [metaData]="metaData" (broadcastSearchQuery)="registerFilter($event)"></app-search-bar>
+    <ul class="burger__list">
+        <app-product-item *ngFor="let item of filteredProductList"
+                        [id]="item.id" 
+                        [metaData]="metaData"
+                        [imageUrl]="item.imageUrl"
+                        [category]="item.category"
+                        [displayLabel]="item.displayLabel"
+                        [price]="item.price"
+                        [selectedBurgerMap]="selectedBurgerMap"
+                        [selectedBurgersList]="selectedBurgersList"
+                        (broadcastSelectedProduct)="receiveSelectedProduct($event)"
+                        (broadcaseDeselectedProduct)="receiveRemovedProduct($event)"
+                    >
+        </app-product-item>
+      </ul>
+</div>
