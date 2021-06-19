@@ -4,42 +4,51 @@
         "menu": [
             {
                 "id": "1",
-                "displayLabel": "Burger-1",
-                "imageUrl": "https://nv.ua/img/article/24657/64_main.jpeg",
+                "displayLabel": "Big Kahuna Burger",
+                "imageUrl": "https://static.technogramsolutions.com/banners/a1e99e76-8acd-41b2-b385-56dc2430c682.jpg",
                 "rating": 3,
                 "price": 250,
                 "category": "veg"
             },
             {
                 "id": "2",
-                "displayLabel": "Burger-2",
-                "imageUrl": "http://wallpapersdsc.net/wp-content/uploads/2016/09/Burger-Wallpapers-HD.jpg",
+                "displayLabel": "Master Burger",
+                "imageUrl": "http://static.technogramsolutions.com/banners/a9747028-c226-4e21-a9b2-0b9a4a128346.jpg",
                 "rating": 1,
                 "price": 200,
                 "category": "veg"
             },
             {
                 "id": "3",
-                "displayLabel": "Burger-3",
-                "imageUrl": "http://www.voreini.gr/wp-content/uploads/hamberger.jpg",
+                "displayLabel": "Chicken Maharaja",
+                "imageUrl": "http://static.technogramsolutions.com/banners/ee84c35d-ad60-468a-bd75-8b4567251d51.jpg",
                 "rating": 4,
                 "price": 350,
                 "category": "nonVeg"
-            },{
+            },
+            {
                 "id": "4",
-                "displayLabel": "Burger-4",
-                "imageUrl": "https://wallpaper.wiki/wp-content/uploads/2017/04/wallpaper.wiki-Free-Burger-Image-PIC-WPB0013280.jpg",
+                "displayLabel": "Cheese Burger",
+                "imageUrl": "https://static.technogramsolutions.com/banners/30885688-d13b-4c3d-ae77-632cb8854b1a.jpg",
                 "rating": 5,
                 "price": 350,
                 "category": "nonVeg"
             },
             {
                 "id": "5",
-                "displayLabel": "Burger-5",
-                "imageUrl": "http://www.kadulanches.com.br/wp-content/uploads/2016/03/food62-burger-southwest-1024x768.jpg",
+                "displayLabel": "Hamburger",
+                "imageUrl": "http://static.technogramsolutions.com/banners/4a804ab3-9af9-4ee5-937e-b73b95471ef6.jpg",
                 "rating": 4,
                 "price": 320,
                 "category": "nonVeg"
+            },
+            {
+                "id": "5",
+                "displayLabel": "Brussels Burger",
+                "imageUrl": "http://static.technogramsolutions.com/banners/c6b0f1bf-f93c-409d-a016-1e69db57d676.jpg",
+                "rating": 4,
+                "price": 320,
+                "category": "Veg"
             }
         ]
     },
@@ -55,7 +64,7 @@
             "filterList": [
                 {
                     "id": "ratings",
-                    "type": "radio",
+                    "type": "checkbox",
                     "order": 1,
                     "displayLabel": "Ratings",
                     "options": [
@@ -64,25 +73,25 @@
                             "order": 1,
                             "value": 5,
                             "displayLabel": "5 Star"
-                        }, 
+                        },
                         {
                             "id": "4",
                             "order": 2,
                             "value": 4,
                             "displayLabel": "4 Star"
-                        }, 
+                        },
                         {
                             "id": "3",
                             "order": 3,
                             "value": 3,
                             "displayLabel": "3 Star"
-                        }, 
+                        },
                         {
                             "id": "2",
                             "order": 4,
                             "value": 2,
                             "displayLabel": "2 Star"
-                        }, 
+                        },
                         {
                             "id": "1",
                             "order": 5,
@@ -90,8 +99,8 @@
                             "displayLabel": "1 Star"
                         }
                     ]
-                  },
-                  {
+                },
+                {
                     "id": "category",
                     "type": "radio",
                     "order": 2,
@@ -101,14 +110,14 @@
                             "id": "veg",
                             "order": 1,
                             "displayLabel": "Veg"
-                        }, 
+                        },
                         {
                             "id": "nonVeg",
                             "order": 2,
                             "displayLabel": "Non Veg"
                         }
                     ]
-                  }
+                }
             ]
         },
         "sortBy": {
@@ -119,14 +128,19 @@
                     "id": "highToLow",
                     "order": 1,
                     "displayLabel": "High to Low"
-                }, 
+                },
                 {
                     "id": "lowToHigh",
                     "order": 2,
                     "displayLabel": "Low to High"
                 }
             ]
-        }
+        },
+        "filteringOrder": [
+            "checkbox",
+            "radio",
+            "search"
+        ]
     },
     "selected": {}
 }

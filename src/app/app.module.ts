@@ -43,33 +43,33 @@ import { CheckoutPageComponent } from './checkout-page/checkout-page.component';
     BrowserAnimationsModule,
     MatCheckboxModule,
     MatRadioModule,
-    RouterModule.forRoot( [ 
-      {
+    RouterModule.forRoot([
+    {
         path: '',
         redirectTo: 'home',
         pathMatch: 'full'
-      },
-      {
+    },
+    {
         path: 'home',
         component: HomePageComponent
-      },
-      {
+    },
+    {
         path: 'menu',
         component: ProductComponent
-      },
-      {
+    },
+    {
         path: 'cart',
         component: OrderDetailComponent
-      },
-      {
+    },
+    {
         path: 'checkout',
         component: CheckoutPageComponent
-      },
-      {
+    },
+    {
         path: '**',
         component: NotFoundComponent
-      } 
-    ] ),
+    }
+], { relativeLinkResolution: 'legacy' }),
   ],
 
   /**
